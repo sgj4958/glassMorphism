@@ -20,12 +20,15 @@
 
     /* //// */
 
+    section {
+        position: relative;
+    }
     .ball {
         border-radius: 100%;
         position: absolute;
         aspect-ratio: 1;
-        &:nth-child(2) {top: 25%; right: 21%; background: hsl(10 80% 80%); width: 100px;}
-        &:nth-child(3) {top: 48%; left: 12%; background: hsl(180 80% 80%); width: 250px;}
+        &:nth-child(2) {top: -50px; right: -50px; background: hsl(10 80% 80%); width: 100px;}
+        &:nth-child(3) {bottom: -125px; left: -125px; background: hsl(180 80% 80%); width: 250px;}
     }
     .glassMorphism {
         width: 375px;
@@ -45,14 +48,16 @@
 </head>
 
 <body>
-<glass class="glassMorphism" thick="3">
-    <div>
-        <h1>Icecream</h1>
-        아이스크림
-    </div>
-</glass>
-<div class="ball"></div>
-<div class="ball"></div>
+    <section>
+        <glass class="glassMorphism" thick="3">
+            <div>
+                <h1>Icecream</h1>
+                아이스크림
+            </div>
+        </glass>
+        <div class="ball"></div>
+        <div class="ball"></div>
+    </section>
 </body>
 <script>
 </script>
