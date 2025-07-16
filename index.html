@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="module" src="glassMorphism.js"></script>
+    <style>
+    body {
+        border: 1px solid #ddd;
+        margin: 5px;
+        overflow: hidden;
+        width: 90vw;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+    }
+
+    /* //// */
+
+    .ball {
+        border-radius: 100%;
+        position: absolute;
+        aspect-ratio: 1;
+        &:nth-child(2) {top: 25%; right: 21%; background: hsl(10 80% 80%); width: 100px;}
+        &:nth-child(3) {top: 48%; left: 12%; background: hsl(180 80% 80%); width: 250px;}
+    }
+    .glassMorphism {
+        width: 375px;
+        aspect-ratio: 1.5;
+        div {
+            position: absolute;
+            inset: 50px;
+            font-size: 1.4em;
+            color: #333;
+            h1 {
+                font-size: 1.8em;
+                margin: 0;
+            }
+        }
+    }
+    </style>
+</head>
+
+<body>
+<glass class="glassMorphism" thick="3">
+    <div>
+        <h1>Icecream</h1>
+        아이스크림
+    </div>
+</glass>
+<div class="ball"></div>
+<div class="ball"></div>
+</body>
+<script>
+</script>
+</html>
